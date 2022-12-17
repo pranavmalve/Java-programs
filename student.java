@@ -1,18 +1,28 @@
- class Student {
-	 int id;
-	 String name ;
-	 void display() 
-	 {
-		 System.out.print(id +" " +name);
-	 }
-	 
 
+public class student {
+int rollno;
+String name;
+static String college= "RKT";
+
+student(int r,String n)
+{
+	 rollno=r;
+	 name=n;
+}
+
+void display() 
+{
+	 System.out.println(rollno +" " +name+" "+ college);
+}
+	
+	
 	public static void main(String[] args) {
-Student s1 = new Student();
-Student s2 = new Student();
+		student s1 = new student(1,"Ash");
+		student s2 = new student(2,"Brock");
 
-s1.display();
-s2.display();
+		s1.display();
+		s2.display();
+
 	}
 
 }
